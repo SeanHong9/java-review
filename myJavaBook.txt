@@ -1,0 +1,120 @@
+Java 複習
+syso => System.out.println();
+psvm => public static void main(String[] args){}
+
+String 
+	"abc"
+int 
+	1
+float 
+	5.99 5.99f
+char 
+	'a'
+boolean 
+	true
+35e3 == 35*10^3
+myvar != myVar
+final後不可賦值
+
+convert doublt to int:
+    double numd = 1.11
+    int numi = (int)numd;
+
+operator:
+    + - * / % ++ -- 
+    = . += . -= . *= . /= . %= . &= . |= . ^=(XOR) . >>=(二進位左移增加) . <<=(二進位右移減少) 
+    
+    true    &=    true    ==>    true
+    true    &=    false    ==>    false
+    false    &=    true    ==>    false
+    false    &=    false    ==>    false
+    true    |=    true    ==>    true
+    true    |=    false    ==>    true
+    false    |=    true    ==>    true
+    false    |=    false    ==>    false
+    true    ^=    true    ==>    false
+    true    ^=    false    ==>    true
+    false    ^=    true    ==>    true
+    false    ^=    false    ==>    false
+
+    == . != . > . >= . <=
+    && . || . !
+跳脫字元\
+換行 \n
+
+數學運算:
+    Math.max(a,b)
+    Math.min(a,b)
+    Math.sqrt(a) 開平方
+    Math.abs(a) 絕對值
+
+switch:
+    switch(today){
+        case "Monday":
+            System.out.println("Today is " + today);
+        default:
+            System.out.println("This is " + today); 
+    }
+
+while:
+    while(-){~};
+    do{~}while(-);
+
+for:
+    for(int i=1;i<5;i++){
+        System.out.println(i);    
+    }
+
+each:
+    String[] cars = {"1","2","3","4"};
+    for(String item : cars){
+        System.out.println(item);
+    }        
+
+break: 跳出整個迴圈 
+continue: 直接開始下次迴圈
+
+static?
+不需要初始話就可以調用的method
+    物件方法，可以存取物件成員及類別成員。 
+        Object method can access non-static field or static field.
+    類別方法，只能存取類別成員。
+        Static method can only access static field.
+
+OOP程序導向差異
+    物件導向:
+        創建同時包含數據和函數對象
+    程序導向:  
+        編寫[對數據進行操作]的程序或函數
+    
+OOP優點:
+    -更快更容易執行
+    -程序有清晰的結構
+    -DRY原則，讓程式容易維護、修改和測試
+    -用更少的程式和更短的開發時間創建可重複利用的可能
+
+物件初始化:
+    public class Car{
+        x=5;
+
+        psvm
+            Car myCar1 = new Car();
+            syso myCar1.x
+    }
+
+構造函數:
+    public class Car{
+        int modelYear;
+        String modelName;
+
+        public Car(int modelYear,String modelName) {
+            
+        }
+        psvm
+            Car myCar1 = new Car();
+            syso myCar1.x
+    }
+    
+
+
+
